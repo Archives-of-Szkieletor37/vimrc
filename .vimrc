@@ -1,4 +1,5 @@
-:set autoindent
+:set noautoindent
+:set shiftwidth=2
 :set relativenumber
 :set number
 :imap <C-j> <esc>
@@ -118,7 +119,7 @@ call dein#add('Shougo/neosnippet')
 call dein#add('osyo-manga/vim-stargate')
 call dein#add('vim-jp/vim-cpp')
 call dein#add('thinca/vim-quickrun')  " You can specify revision/branch/tag.
-call dein#add('kana/vim-filetype-haskell')
+call dein#add('itchyny/vim-haskell-indent')
 
   " Required:
   call dein#end()
@@ -127,6 +128,7 @@ endif
 
 " Required:
 filetype plugin indent on
+
 syntax enable
 
 " If you want to install not installed plugins on startup.
