@@ -61,6 +61,16 @@ endif
 
 "End dein Scripts-------------------------
 
+:set noautoindent
+:set shiftwidth=2
+:set relativenumber
+:set number
+:imap <C-j> <esc>
+:noremap! <C-j> <esc>
+:set clipboard =unnamedplus
+:colorscheme elflord
+:let g:neocomplete#enable_at_startup = 1
+"neocompleteの推奨設定
 "Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -220,3 +230,4 @@ endif
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
+
